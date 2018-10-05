@@ -13,7 +13,7 @@ public class Character {
 	private String        fullName;    //Sansa Stark
 	private String        portrayedBy; //Sophie Turner
 	private House         house;       //House Stark
-	
+	private boolean       isAlive;     //true if alive, false if dead.
 	public Character() {}
 
 	public List<String> getTitles() {
@@ -55,4 +55,13 @@ public class Character {
 	public void setHouse(House house) {
 		this.house = house;
 	}
+	
+	public void setIsAlive(boolean isAlive){
+		this.isAlive = isAlive;
+	}
+	
+	public boolean getIsAlive(){
+		return this.isAlive;
+	}
+	
 }
